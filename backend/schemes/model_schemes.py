@@ -2,4 +2,5 @@ from pydantic import BaseModel
 
 
 class ModelBaseSchema(BaseModel):
-    answer: str
+    target_name: str
+    probability: float
