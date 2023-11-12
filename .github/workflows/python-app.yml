@@ -24,4 +24,5 @@ jobs:
     - name: Run tests
       run: |
           pwd
+          ls
           pytest
