@@ -4,7 +4,7 @@ import cv2
 import numpy
 
 inception = tf.keras.applications.InceptionV3()
-with open("ai/labels.txt", mode="r") as file:
+with open("labels.txt", mode="r") as file:
     labels = list(map(lambda x: x.replace('\n', ''), file.readlines()))
 
 
