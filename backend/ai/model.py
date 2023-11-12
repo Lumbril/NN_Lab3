@@ -17,7 +17,7 @@ def classify(image):
 
 
 def prediction(image):
-    image = cv2.imdecode(numpy.fromstring(image.file.read(), numpy.uint8), cv2.IMREAD_UNCHANGED)
+    image = cv2.imdecode(numpy.frombuffer(image.file.read(), numpy.uint8), cv2.IMREAD_UNCHANGED)
     image = cv2.resize(image, (299, 299), 3)
     label = classify(image)
     k = Counter(label)
