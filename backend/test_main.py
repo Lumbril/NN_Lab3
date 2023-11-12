@@ -5,7 +5,7 @@ client = TestClient(app)
 
 
 def test_incorrect_file():
-    file_path = "ai/labels.txt"
+    file_path = "labels.txt"
 
     with open(file_path, "rb") as file:
         response = client.post("/api/model", files={"file": ("labels.txt", file)})
