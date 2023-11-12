@@ -19,7 +19,7 @@ jobs:
         python-version: "3.11"
 
     - name: Install dependencies
-      run: pip install fastapi tensorflow numpy pytest opencv-python httpx uvicorn
+      run: pip install fastapi tensorflow numpy pytest opencv-python httpx uvicorn python-multipart
 
     - name: Run tests
       run: |
