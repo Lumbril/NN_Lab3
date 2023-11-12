@@ -22,4 +22,6 @@ jobs:
       run: pip install fastapi tensorflow numpy pytest opencv-python httpx uvicorn
 
     - name: Run tests
-      run: pytest
+      run: |
+          pwd
+          pytest
